@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+<title>个人简介</title>
+<style>
+
+*{
+
+    margin: 0;
+
+     padding: 0;
+
+    text-decoration: none;
+
+    list-style: none;
+
+}
+
+.main{
+
+   max-width: 1000px;/* 让整个网页只有800宽 */
+
+   margin: auto;/* 让它水平居中 */
+
+}
+
+  .header,.nav,.container,.footer{
+
+/* 这四个盒子都要左浮动 */
+
+       float: left;
+
+/* 让它们满浏览器 */
+
+       width: 100%;
+
+/* 内边距会影响整个盒子的实际大小，这里有一种方法可以处理，让它不影响 */
+
+       box-sizing: border-box;/* 就是这句 */
+
+}
+
+.header{
+
+       background: #ccc;
+
+       padding: 1px;
+
+}
+
+.nav{
+
+background: #639;
+
+}
+
+.nav a{
+
+color: #fff;
+
+padding: 20px 80px;
+
+display: inline-block;/* 让链接以块的形式显示 */
+
+}
+
+.nav a:hover{
+
+background: #bbb;
+
+color: #000;
+
+}
+
+.lside{
+
+width: 450px;
+
+float: left;
+
+}
+
+.rside{
+
+width: 450px;
+
+float: right;
+
+}
+
+
+.lside,.rside{
+
+padding: 5px;
+
+box-sizing: border-box;/* 去掉内边距影响 */
+
+}
+
+.footer{
+
+padding: 10px;
+
+background: #99F;
+
+text-align: center;
+
+}
+
+/* 最后加个功能，当浏览宽度小于700时，三个栏进行竖排 */
+
+@media screen and (max-width:700px) {
+
+.lside,.rside,.content{
+
+width: 100%;
+
+margin: 0px;
+
+}
+
+}
+
+</style>
+<link href="jb.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="header"><img src="sdq(1).jpg" width="1000" height="451" /></div>
+
+<div class="nav">
+
+<a href="#">个人介绍</a>
+
+<a href="#">喜欢的动物</a>
+
+<a href="#">喜欢的美食</a>
+
+<a href="#">其他</a>
+
+</div>
+
+<div class="container">
+
+<!-- 主体这里我们要放入三个盒子，分别是左中右,要注意的是我们用margin进行三栏布局
+
+           中间的栏是自适应的，所以中间的栏放在第三个。
+
+           -->
+
+<div class="lside">
+
+<p>
+  <img src="QQ图片20230908175633.jpg" width="450" height="450" /> </p>
+
+</div>
+
+<div class="rside">
+
+<h2>简介</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>姓名：双娇</p>
+<p>&nbsp;</p>
+
+<p>
+  
+  性别：女</p>
+<p><br>
+  班级：2021级3班</p>
+<p><br>
+  专业：计算机科学与技术专业</p>
+<p>&nbsp;</p>
+<p>地址：四川雅安</p>
+<p><br>
+  星座：狮子座</p>
+<p><br>
+  属相：蛇</p>
+<p><br>
+  兴趣：跳舞，画画</p>
+<p><br>
+  爱好：喜欢各种可爱的东和丑萌的东西，吃喝玩乐等
+</p>
+
+</div>
+</div>
+
+<div class="footer">
+
+<p>call me！QQ：1928966081</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
